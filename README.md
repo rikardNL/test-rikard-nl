@@ -5,6 +5,7 @@ Needs to have Cassandra running on localhost listening on port 9042 (or just cha
 This is true both for running tests and the application.
 
 Test: `activator test` or `sbt test` from the directory
+
 Run: `activator run` or `sbt run` from the directory
 
 POST to localhost:9000 with the url to create for under parameter: url 
