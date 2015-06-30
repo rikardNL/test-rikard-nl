@@ -62,15 +62,15 @@ Considered two options
 
 * Generate from input url (hash or similar)
 * Generate from a combination on where it was created and the time it was
-created (timeuuid)
+created (pseudo type 1 uuid)
 
 First option could cause collisions when using a hash. Need to use an injective
 function. That would lose the possibilty of making a short url.
 
 Current implementation follows in line with the seconds option an generates a
 large Long. This could be shrunk to a alphanumeric value, like mentioned above,
-using encoding. A better option would be using a version of timeuuid (available
-in Cassandra).
+using encoding. A better option would be using a uuid (available in Cassandra)
+and encoding it using a higher base.
 
 Inserts
 -------
